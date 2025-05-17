@@ -1,0 +1,120 @@
+/* Additional CSS for enhanced forms */
+
+/* Form Sections */
+.form-section {
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.form-section:last-child {
+  border-bottom: none;
+  margin-bottom: 1rem;
+}
+
+.form-section-title {
+  font-size: 1.25rem;
+  color: #4361ee;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.form-section-description {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 1.25rem;
+}
+
+/* Form Rows */
+.form-row {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.form-row .form-group {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Checkbox styling */
+.checkbox-group {
+  margin-top: 1rem;
+}
+
+.form-group.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.form-group.checkbox label {
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+.form-group.checkbox input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+/* Enhanced Feature Items */
+.features-grid {
+  margin-bottom: 2rem;
+}
+
+.feature-item label {
+  padding: 1.5rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.feature-item label:hover {
+  border-color: #4361ee;
+  background-color: #f9fafc;
+}
+
+.feature-item input[type="checkbox"]:checked + label {
+  border-color: #4361ee;
+  background-color: #f5f7ff;
+  box-shadow: 0 2px 5px rgba(67, 97, 238, 0.1);
+}
+
+.feature-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.feature-icon svg {
+  color: #4361ee;
+}
+
+/* Date picker styling */
+input[type="date"] {
+  padding: 0.75rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  font-family: inherit;
+  color: #333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .form-row .form-group {
+    width: 100%;
+  }
+  
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+}
