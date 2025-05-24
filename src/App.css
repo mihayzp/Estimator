@@ -84,8 +84,7 @@ main {
 }
 
 .step {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   align-items: center;
   position: relative;
   z-index: 1;
